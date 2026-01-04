@@ -483,6 +483,15 @@ export const originSources = {
       },
     },
   },
+  "ao3": {
+    name: "AO3",
+    title: "Recent Works",
+    column: "world",
+    color: "red",
+    interval: Time.Slow, // 60 minutes - AO3 has undefined limits.
+    home: "https://archiveofourown.org",
+    desc: "Archive of Our Own - Fan fiction archive",
+  },
 } as const satisfies Record<string, OriginSource>
 
 export function genSources() {
