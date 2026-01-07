@@ -97,7 +97,7 @@
     "unocss": "^66.0.0",
     "vite": "^6.2.0",
     "vite-plugin-pwa": "^0.21.1",
-    "vite-plugin-with-nitro": "0.0.3",
+    "vite-plugin-with-nitro": "0.0.5",
     "vitest": "^3.0.7",
     "workbox-build": "^7.3.0",
     "workbox-window": "^7.3.0",
@@ -117,7 +117,11 @@
       "simple-git-hooks",
       "unrs-resolver",
       "workerd"
-    ]
+    ],
+    "overrides": {
+      "h3-nightly": "npm:h3@^1.15.1",
+      "vite-plugin-with-nitro>h3": "npm:h3@^1.15.1"
+    }
   },
   "resolutions": {
     "cross-spawn": ">=7.0.6",

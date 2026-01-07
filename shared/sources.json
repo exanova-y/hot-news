@@ -563,5 +563,14 @@
     "color": "green",
     "interval": 1800000,
     "title": "热播榜"
+  },
+  "ao3": {
+    "title": "Recent Works",
+    "name": "AO3",
+    "desc": "Archive of Our Own - Fan fiction archive",
+    "column": "world",
+    "home": "https://archiveofourown.org",
+    "color": "red",
+    "interval": 3600000
   }
 }
