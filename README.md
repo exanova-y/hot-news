@@ -1,3 +1,11 @@
+# Data sources added:
+
+### AO3
+A fanfiction website with 8 million users.
+
+How to use these added sources:
+Navigate to "更多". Star AO3 as a source, and open it again in "Focus"/
+
 ![](/public/og-image.png)
 
 English | [简体中文](README.zh-CN.md) | [日本語](README.ja-JP.md)
