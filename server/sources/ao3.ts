@@ -4,11 +4,17 @@ import * as cheerio from "cheerio"
 // case 2: AO3 does not have an API.
 // use pattern: HTML scraping with oftech + cheerio
 
-// to do: add tags later.
+// to do: add tags later, add interface
 // add lang. add hits.
 
+// interface AO3Stats {
+//   kudos: string
+//   hits: string
+//   words: string
+// }
+
 export default defineSource({
-  "ao3": async () => {
+  ao3: async () => {
     const baseURL = "https://archiveofourown.org/works"
     const html = await myFetch(baseURL)
     const $ = cheerio.load(html)
@@ -45,8 +51,5 @@ export default defineSource({
       ao3stats = []
     })
     return news
-  },
-  "ao3-popular": async () => {
-    // Similar implementation for popular works
   },
 })

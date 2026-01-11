@@ -572,5 +572,22 @@
     "home": "https://archiveofourown.org",
     "color": "red",
     "interval": 3600000
+  },
+  "slashdot": {
+    "redirect": "slashdot-science",
+    "name": "Slashdot",
+    "column": "world",
+    "home": "https://rss.slashdot.org/Slashdot/slashdotScience",
+    "color": "blue",
+    "interval": 3600000,
+    "title": "Science"
+  },
+  "slashdot-science": {
+    "name": "Slashdot",
+    "column": "world",
+    "home": "https://rss.slashdot.org/Slashdot/slashdotScience",
+    "color": "blue",
+    "interval": 3600000,
+    "title": "Science"
   }
 }

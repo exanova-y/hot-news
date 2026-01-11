@@ -492,6 +492,19 @@ export const originSources = {
     home: "https://archiveofourown.org",
     desc: "Archive of Our Own - Fan fiction archive",
   },
+  "slashdot": {
+    name: "Slashdot",
+    column: "world",
+    color: "blue",
+    home: "https://slashdot.org",
+    interval: Time.Slow,
+    sub: {
+      science: {
+        title: "Science",
+        home: "https://rss.slashdot.org/Slashdot/slashdotScience",
+      },
+    },
+  },
 } as const satisfies Record<string, OriginSource>
 
 export function genSources() {
