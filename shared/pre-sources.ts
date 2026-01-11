@@ -494,7 +494,7 @@ export const originSources = {
   },
   "slashdot": {
     name: "Slashdot",
-    column: "world",
+    column: "tech",
     color: "blue",
     home: "https://slashdot.org",
     interval: Time.Slow,
@@ -504,6 +504,13 @@ export const originSources = {
         home: "https://rss.slashdot.org/Slashdot/slashdotScience",
       },
     },
+  },
+  "hackaday": {
+    name: "Hackaday",
+    column: "tech",
+    color: "green",
+    home: "https://hackaday.com",
+    interval: Time.Fast, // no limit.
   },
 } as const satisfies Record<string, OriginSource>
 

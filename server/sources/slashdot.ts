@@ -1,4 +1,4 @@
-// Slashdot RSS feed, with a User-Agent header in attempt to avoid 403
+// Slashdot RSS feed with a User-Agent header in attempt to avoid 403
 
 import type { NewsItem } from "@shared/types"
 

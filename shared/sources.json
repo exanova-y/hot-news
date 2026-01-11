@@ -576,7 +576,7 @@
   "slashdot": {
     "redirect": "slashdot-science",
     "name": "Slashdot",
-    "column": "world",
+    "column": "tech",
     "home": "https://rss.slashdot.org/Slashdot/slashdotScience",
     "color": "blue",
     "interval": 3600000,
@@ -584,10 +584,17 @@
   },
   "slashdot-science": {
     "name": "Slashdot",
-    "column": "world",
+    "column": "tech",
     "home": "https://rss.slashdot.org/Slashdot/slashdotScience",
     "color": "blue",
     "interval": 3600000,
     "title": "Science"
+  },
+  "hackaday": {
+    "name": "Hackaday",
+    "column": "tech",
+    "home": "https://hackaday.com",
+    "color": "green",
+    "interval": 300000
   }
 }

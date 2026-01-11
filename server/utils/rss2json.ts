@@ -1,10 +1,13 @@
 import { XMLParser } from "fast-xml-parser"
 import type { RSSInfo } from "../types"
+import { logger } from "#/utils/logger"
 
 export async function rss2json(url: string): Promise<RSSInfo | undefined> {
   if (!/^https?:\/\/[^\s$.?#].\S*/i.test(url)) return
 
-  const data = await myFetch(url)
+  // must return a text not "blob"
+  const data = await myFetch(url, { parseResponse: txt => txt })
+  logger.info("rss2json data:", data)
 
   const xml = new XMLParser({
     attributeNamePrefix: "",
@@ -13,6 +16,7 @@ export async function rss2json(url: string): Promise<RSSInfo | undefined> {
   })
 
   const result = xml.parse(data as string)
+  logger.info("rss2json result:", result)
 
   let channel = result.rss && result.rss.channel ? result.rss.channel : result.feed
   if (Array.isArray(channel)) channel = channel[0]
